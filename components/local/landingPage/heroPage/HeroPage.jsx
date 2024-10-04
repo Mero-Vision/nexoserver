@@ -41,7 +41,7 @@ const HeroPage = () => {
                      className="search-input"
                      placeholder="Search for a domain name..."
                   />
-                  <button className="search-button">Search</button>
+                  <button className="search-button">Search.</button>
                </div>
             </Box>
             <Box className="heroBgBox">
