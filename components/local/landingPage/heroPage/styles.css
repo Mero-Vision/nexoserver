@@ -1,0 +1,238 @@
+.heroWrap {
+   padding: 6rem 6rem 4rem 6rem;
+   height: 90dvh;
+   display: flex;
+   align-items: center;
+   margin-top: -95px;
+}
+
+.heroWrapBox {
+   position: relative;
+   width: 100%;
+   /* display: flex;
+   justify-content: space-between; */
+}
+
+.heroMainTitleBox {
+   display: flex;
+   flex-direction: column;
+}
+.heroMainTitle {
+   font-size: 72px;
+   color: #363636;
+   line-height: 78px;
+   font-weight: 700;
+   margin-bottom: 10px;
+   letter-spacing: 3px;
+}
+
+.heroMainSubtitle {
+   font-size: 20px;
+   color: #363636;
+   line-height: 42px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   margin-bottom: 14px;
+}
+.heroMainSubtitleSpan {
+   color: #307fda;
+   font-weight: 600;
+}
+
+.heroBgBox {
+   height: 550px;
+   width: auto;
+   position: absolute;
+   top: -150px;
+   right: 0px;
+   z-index: -1;
+}
+.heroBgImg {
+   height: 100%;
+   width: 100%;
+}
+
+/* search bar */
+
+.search-bar-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 50%; /* Adjust the width as needed */
+   border-radius: 50px;
+   background-color: #fff;
+   /* overflow: hidden; */
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.search-input {
+   flex: 1;
+   padding: 18px 20px;
+   border: none;
+   outline: none;
+   border-radius: 50px 0 0 50px;
+   font-size: 16px;
+}
+
+.search-input::placeholder {
+   color: #676767;
+}
+
+.search-button {
+   background-color: #007bff; /* Button color */
+   border: none;
+   color: white;
+   padding: 12px 24px;
+   border-radius: 50px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   margin-right: 8px;
+   z-index: 10;
+   font-family: "Outfit", sans-serif;
+   letter-spacing: 1px;
+}
+
+.search-button i {
+   margin-right: 8px; /* Adds space between the icon and label */
+   transition: 0.2s ease-in-out;
+}
+
+.search-button:hover {
+   transition: 0.2s ease-in-out;
+   background-color: #5098e4; /* Darker color on hover */
+}
+
+@media screen and (max-width: 1290px) {
+   .search-bar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%; /* Adjust the width as needed */
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   }
+
+   .search-input {
+      flex: 1;
+      padding: 18px 20px;
+      border: none;
+      outline: none;
+      border-radius: 50px 0 0 50px;
+      font-size: 16px;
+   }
+
+   .search-input::placeholder {
+      color: #aaa;
+   }
+
+   .search-button {
+      background-color: #007bff; /* Button color */
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      margin-right: 8px;
+   }
+
+   .search-button i {
+      margin-right: 8px; /* Adds space between the icon and label */
+      transition: 0.2s ease-in-out;
+   }
+
+   .search-button:hover {
+      transition: 0.2s ease-in-out;
+      background-color: #0056b3; /* Darker color on hover */
+   }
+}
+@media screen and (max-width: 1080px) {
+   .heroWrap {
+      padding: 6rem 4rem 4rem 4rem;
+      height: 90dvh;
+      display: flex;
+      align-items: center;
+      margin-top: -85px;
+   }
+
+   .heroMainTitle {
+      font-size: 62px;
+   }
+
+   .heroMainSubtitle {
+      font-size: 18px;
+   }
+   .heroBgBox {
+      height: 400px;
+      width: auto;
+      position: absolute;
+      top: -100px;
+      right: 0px;
+      z-index: -1;
+   }
+}
+@media screen and (max-width: 760px) {
+   .heroWrap {
+      padding: 6rem 2rem 4rem 2rem;
+      height: 90dvh;
+      display: flex;
+      align-items: center;
+      margin-top: -85px;
+   }
+
+   .heroMainTitle {
+      font-size: 52px;
+      margin-bottom: 8px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+   }
+
+   .heroMainSubtitle {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+   }
+   .heroBgBox {
+      height: 250px;
+      width: auto;
+      position: absolute;
+      top: -80px;
+      right: 0px;
+      z-index: -1;
+   }
+   .search-bar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%; /* Adjust the width as needed */
+      border-radius: 50px;
+      overflow: hidden;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   }
+}
+@media screen and (max-width: 640px) {
+   .heroBgBox {
+      display: none;
+   }
+}
+@media screen and (max-width: 480px) {
+   .heroMainTitle {
+      font-size: 42px;
+      line-height: 35px;
+      letter-spacing: 1px;
+   }
+
+   .heroMainSubtitle {
+      font-size: 14px;
+      line-height: 16px;
+   }
+}
