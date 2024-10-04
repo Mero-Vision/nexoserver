@@ -1,0 +1,38 @@
+.bannerBox {
+   height: 220px;
+   background-color: #e1f5ff;
+}
+.bannerTextBox {
+   padding-top: 110px;
+   text-align: center;
+}
+
+.bannerTextBoxTitle {
+   font-size: 28px;
+   font-weight: 600;
+}
+.bannerBreadCrumbsBox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.bannerBreadCrumbsHome {
+   font-size: 13px;
+   font-weight: 600;
+   color: #9d9caf;
+   cursor: pointer;
+}
+.bannerBreadCrumbsSecond {
+   font-size: 13px;
+   font-weight: 600;
+   color: #000;
+   cursor: pointer;
+}
+.bannerBreadCrumbsSecondSlug {
+   font-size: 13px;
+   font-weight: 600;
+   color: #000;
+}
+
+@media screen and (max-width: 350px) {
+}

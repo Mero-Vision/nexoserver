@@ -1,0 +1,371 @@
+.footer {
+   width: 100%;
+   background: linear-gradient(120deg, #3479dd, #298dd9, #47b7d6);
+   position: relative;
+}
+
+.mountainImg {
+   position: absolute;
+   bottom: 0;
+   left: -85px;
+   width: 800px;
+   height: auto;
+   z-index: 1;
+}
+
+.footer .container {
+   /* max-width: 1240px; */
+   padding: 3rem 6rem;
+   margin: auto;
+   overflow: hidden;
+   position: relative;
+   z-index: 10;
+}
+
+.footer .logo {
+   display: flex;
+   align-items: center;
+   color: #fff;
+   height: 100%;
+}
+.footer .footerLogo {
+   width: 154px;
+   height: 100%;
+   margin-bottom: 24px;
+}
+
+.footer .logoGridDesc {
+   width: 80%;
+   margin-bottom: 22px;
+   font-size: 16px;
+   line-height: 24px;
+   color: #fff;
+}
+
+.footer .menu-box {
+   display: flex;
+   gap: 20px;
+   height: fit-content;
+}
+
+.footer .menu-box .link {
+   color: #fff;
+}
+
+.footer h6,
+p {
+   color: gray;
+   font-size: 14px;
+   padding: 0.4rem 0;
+}
+
+.footer .link {
+   color: gray;
+   font-size: 14px;
+   padding: 0.4rem 0;
+   display: block;
+}
+
+.footer .subscribe {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer input {
+   padding: 0.4rem;
+   font-size: 14px;
+   border-radius: 4px;
+   width: 250px;
+   border: 1px solid gray;
+}
+
+.footer button {
+   margin-left: 0.8rem;
+   width: 150px;
+}
+.footer-bottom {
+   padding: 0rem 2rem;
+   position: relative;
+   z-index: 10;
+}
+
+.footer .content {
+   /* max-width: 1240px; */
+   margin: auto;
+   padding: 1.6rem 4rem;
+   display: flex;
+   justify-content: center;
+   border-top: 1px solid #fff;
+}
+
+.footer .content .rights p {
+   color: #fff;
+}
+
+.footer .content .rights p .meroVisionLink {
+   color: #10036c;
+}
+.footer .content .rights p .meroVisionLink:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.privacyBox {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   font-size: 12px;
+   color: #d2e2fa !important;
+}
+
+/* g2 */
+
+.footerG2 {
+   display: flex;
+   justify-content: space-between;
+   padding-right: 20px;
+}
+
+.g2ItemBox {
+   display: flex;
+   flex-direction: column;
+}
+
+.itemBoxHead {
+   font-size: 16px;
+   font-weight: 500;
+   text-transform: uppercase;
+   line-height: 27px;
+   color: #fff;
+   margin-bottom: 22px;
+}
+
+.itemBoxLinksBox {
+   display: flex;
+   flex-direction: column;
+   gap: 12px !important;
+}
+
+.itemBoxLinks {
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 25px;
+   color: #fff;
+   cursor: pointer;
+}
+
+.logoFooter {
+   width: 130px;
+   height: auto;
+}
+
+/* g3 */
+
+.g2Grid {
+   padding-left: 20px;
+}
+
+.addressBox {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   margin-bottom: 40px;
+}
+.addressHead {
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: capitalize;
+   line-height: 36px;
+   color: #fff;
+}
+
+.addressInfo {
+   font-size: 14px !important;
+   font-weight: 400;
+   line-height: 25px;
+   letter-spacing: 2.5px;
+   color: #e9e9e9;
+   cursor: pointer;
+}
+
+/* iinquiries box */
+
+.inquiriesBox {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   margin-bottom: 40px;
+}
+.inquiriesBoxHead {
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: capitalize;
+   line-height: 36px;
+   color: #fff;
+}
+
+.inquiriesInfo {
+   font-size: 14px !important;
+   font-weight: 400;
+   line-height: 25px;
+   letter-spacing: 2.5px;
+   color: #e9e9e9;
+   cursor: pointer;
+}
+
+.itemBoxLinksBox {
+   color: #fff;
+   text-decoration: none !important;
+}
+
+@media screen and (max-width: 1199px) {
+   .footerG2 {
+      padding-right: 0px;
+   }
+   .g2Grid {
+      padding-left: 0px;
+   }
+
+   .mountainImg {
+      position: absolute;
+      bottom: 0;
+      left: -85px;
+      width: 700px;
+      height: auto;
+   }
+}
+@media screen and (max-width: 960px) {
+   .privacyBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 12px;
+      color: #d2e2fa !important;
+      margin-bottom: 20px;
+   }
+   .footer .container {
+      padding: 1rem;
+   }
+
+   .footer .solutions,
+   .support {
+      display: none;
+   }
+
+   .footer .col-subscribe {
+      margin: 2rem;
+      text-align: center;
+   }
+
+   .footer .subscribe {
+      flex-direction: column;
+   }
+
+   .footer input {
+      width: 100%;
+   }
+
+   .footer button {
+      width: 100%;
+      margin: 0.2rem 0;
+   }
+
+   .footer-bottom .content {
+      padding: 0.8rem 0rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .footer-bottom .right {
+      display: none;
+   }
+
+   .addressHead {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 30px;
+      color: #fff;
+   }
+
+   .addressInfo {
+      font-size: 12px !important;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 2.5px;
+      color: #e9e9e9;
+   }
+
+   /* iinquiries box */
+
+   .inquiriesBoxHead {
+      font-size: 16px;
+      line-height: 30px;
+   }
+
+   .inquiriesInfo {
+      font-size: 12px !important;
+      line-height: 22px;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .mountainImg {
+      position: absolute;
+      bottom: 0;
+      left: -65px;
+      width: 600px;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 585px) {
+   .mountainImg {
+      position: absolute;
+      bottom: 0;
+      left: -55px;
+      width: 500px;
+      height: auto;
+   }
+}
+@media screen and (max-width: 525px) {
+   .mountainImg {
+      position: absolute;
+      bottom: 0;
+      left: -40px;
+      width: 450px;
+      height: auto;
+   }
+}
+@media screen and (max-width: 460px) {
+   .mountainImg {
+      position: absolute;
+      bottom: 0;
+      left: -35px;
+      width: 400px;
+      height: auto;
+   }
+}
+@media screen and (max-width: 400px) {
+   .mountainImg {
+      position: absolute;
+      bottom: 0;
+      left: -15px;
+      width: 350px;
+      height: auto;
+   }
+}
+@media screen and (max-width: 390px) {
+   .mountainImg {
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      width: 320px;
+      height: auto;
+   }
+}

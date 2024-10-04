@@ -1,0 +1,25 @@
+.breadCrumbsBox {
+   display: flex;
+   align-items: center;
+   margin-bottom: 26px;
+}
+.breadCrumbsHome {
+   font-size: 13px;
+   font-weight: 600;
+   color: #9d9caf;
+   cursor: pointer;
+}
+.breadCrumbsSecond {
+   font-size: 13px;
+   font-weight: 600;
+   color: #000;
+   cursor: pointer;
+}
+.breadCrumbsSecondSlug {
+   font-size: 13px;
+   font-weight: 600;
+   color: #000;
+}
+
+@media screen and (max-width: 350px) {
+}

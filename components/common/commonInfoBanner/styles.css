@@ -1,0 +1,110 @@
+.CompanyInfoBoxWrap {
+   padding: 2rem 6rem;
+   height: 158px;
+   display: flex;
+   align-items: center;
+   border: 2px solid #7e9bad;
+}
+
+.singleItemBox {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   justify-content: center;
+}
+
+.singleItemGrid2 {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.singleItemGrid2NumberText {
+   font-size: 30px;
+   font-weight: 800;
+   color: #fff;
+}
+
+.singleItemGrid2Title {
+   font-size: 16px;
+   font-weight: 500;
+   color: #fff;
+   text-align: center;
+}
+
+#mb_parallax_two {
+   background-image: url(../../../public/assets/about/bannerImg.jpg);
+}
+
+.tAndCBox {
+   background-color: #f8f8f8;
+}
+
+.tAndCBoxWrap {
+   padding: 2rem;
+}
+
+.mb_parallax_container {
+   height: auto;
+   width: 100%;
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.mb_parallax_overlay {
+   height: 100%;
+   width: 100%;
+   margin: auto;
+   background-color: #37378bdc;
+}
+
+@media (max-width: 899px) {
+   .CompanyInfoBoxWrap {
+      padding: 4rem 6rem;
+      height: 100%;
+   }
+
+   .singleItemBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 1100px) {
+   .CompanyInfoBoxWrap {
+      padding: 2rem 4rem;
+      height: auto;
+   }
+
+   .singleItemBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+   }
+}
+
+@media screen and (max-width: 718px) {
+   .CompanyInfoBoxWrap {
+      padding: 6rem 2rem;
+   }
+
+   .singleItemBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 599px) {
+   .CompanyInfoBoxWrap {
+      padding: 2rem 6rem;
+   }
+}
