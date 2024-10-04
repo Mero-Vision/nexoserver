@@ -20,7 +20,6 @@ export const CustomInput = memo(
       errors,
       placeholder = null,
       label = "",
-      rule = { required: false },
       title = "",
       disabled = false,
       hidden = false,
@@ -32,11 +31,6 @@ export const CustomInput = memo(
       endIcon,
       defaultValue,
       isNegative,
-      productSearch,
-      whiteBackground,
-      forgotPassword,
-      itemOrderInput,
-      itemOrderToppings,
       bgRed,
    }) => {
       const [show, setShow] = useState(false);
@@ -94,29 +88,6 @@ export const CustomInput = memo(
                      <>
                         <TextField
                            sx={
-                              // "& .textField": {
-                              //    "& .MuiInputBase-root": {
-                              //       border: "2px solid #fff !important",
-                              //    },
-                              //    "& .MuiOutlinedInput-root": {
-                              //       backgroundColor: "#fff !important",
-                              //    },
-                              //    "& .input": {
-                              //       backgroundColor: "red !important",
-                              //    },
-                              // },
-                              // "& .title": {
-                              //    fontSize: "19px",
-                              //    fontWeight: "500 !important",
-                              //    color: theme.palette.text.main,
-                              //    marginBottom: "8px",
-                              // },
-                              // "& svg": {
-                              //    marginRight: "9px",
-                              //    height: "19px",
-                              //    width: "19px",
-                              // },
-
                               ({
                                  "& .MuiOutlinedInput-notchedOutline":
                                     {
@@ -132,9 +103,7 @@ export const CustomInput = memo(
                               {
                                  "& .MuiOutlinedInput": {
                                     border:
-                                       "1px soild red !important",
-                                    borderColor: "r !important",
-                                    outline: "none !important",
+                                       "1px solid red !important",
                                     backgroundColor:
                                        "#fff !important",
                                  },
@@ -143,8 +112,6 @@ export const CustomInput = memo(
                                  "& .MuiInputBase-root": {
                                     backgroundColor:
                                        "#fff !important",
-                                    // border:
-                                    //    "2px solid #fff !important",
                                     border: "none !important",
                                  },
                               },
@@ -160,14 +127,9 @@ export const CustomInput = memo(
                                  "& .MuiInputBase-input": {
                                     backgroundColor:
                                        "#fff !important",
-                                    // paddingRight: "2px !important",
                                     padding: "16px !important",
                                     fontSize: "12px",
                                     fontFamily: "Outfit !important",
-
-                                    // borderRadius: "80px",
-
-                                    // textAlign: "center",
                                  },
                               })
                            }
@@ -223,7 +185,6 @@ export const CustomInput = memo(
                            hidden={hidden}
                            multiline={rows}
                            rows={rows}
-                           // required={required}
                         />
                         {error && (
                            <Box
@@ -252,3 +213,6 @@ export const CustomInput = memo(
       );
    }
 );
+
+// Set the display name
+CustomInput.displayName = "CustomInput";
