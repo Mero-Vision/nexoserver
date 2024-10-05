@@ -101,7 +101,7 @@ const ChooseNexo = () => {
                   month of service.
                </motion.div>
             </div>
-            <Grid container spacing={4}>
+            <Grid container spacing={3}>
                {pricingData?.map((item, index) => (
                   <Grid
                      key={index}
