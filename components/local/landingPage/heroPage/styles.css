@@ -8,7 +8,6 @@
 }
 
 .heroWrapBox {
-   position: relative;
    width: 100%;
    max-width: 1300px;
    width: 100%;
@@ -47,13 +46,29 @@
    height: 550px;
    width: auto;
    position: absolute;
-   top: -120px;
+   bottom: -120px;
    right: 0px;
    z-index: -1;
 }
 .heroBgImg {
    height: 100%;
    width: 100%;
+}
+
+.heroBgBoxRelative {
+   position: relative;
+}
+
+/* bgImg  1*/
+
+.animation-icon-img {
+   position: absolute;
+   backface-visibility: hidden;
+   animation: bounce 1s ease-in-out 0s infinite alternate;
+}
+.animation-icon-img .animation-icon-1 {
+   left: 15%;
+   top: 30%;
 }
 
 /* search bar */

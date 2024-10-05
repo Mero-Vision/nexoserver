@@ -169,7 +169,7 @@ const Footer = ({ data }) => {
                         // }
                         className="meroVisionLink"
                      >
-                        Incocgnyte Technology Pvt. Ltd.
+                        Mero Vision Pvt. Ltd.
                      </span>
                   </p>
                </div>

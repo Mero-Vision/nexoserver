@@ -1,5 +1,5 @@
 "use client";
-import heroBg from "@/public/assets/serverImg.png";
+import heroBg from "@/public/assets/serverImg4.png";
 import { Box } from "@mui/material";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
@@ -90,12 +90,19 @@ const Hero = () => {
                   <button className="search-button">Search</button>
                </motion.div>
             </Box>
-            <Box className="heroBgBox">
-               <Image
-                  src={heroBg}
+            <Box className="heroBgBoxRelative">
+               <Box className="heroBgBox">
+                  <Image
+                     src={heroBg}
+                     alt="image"
+                     className="heroBgImg"
+                  />
+               </Box>
+               {/* <Image
+                  src={w}
                   alt="image"
-                  className="heroBgImg"
-               />
+                  className="animation-icon-img animation-icon-1"
+               /> */}
             </Box>
          </Box>
       </Box>
