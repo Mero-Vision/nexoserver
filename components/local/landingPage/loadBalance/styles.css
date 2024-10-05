@@ -1,0 +1,113 @@
+.loadWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loadWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.loadTitleBox {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 60px;
+   justify-content: center;
+   align-items: center;
+}
+.loadTitle {
+   font-size: 52px;
+   color: #363636;
+   line-height: 52px;
+   font-weight: 700;
+   margin-bottom: 14px;
+   letter-spacing: 3px;
+   text-align: center;
+}
+.loadSubtitle {
+   font-size: 20px;
+   color: #464545;
+   line-height: 34px;
+   font-weight: 400;
+   letter-spacing: 3px;
+   text-align: center;
+}
+
+.svgBox {
+   width: 100%;
+   height: 300px;
+   margin-bottom: 20px;
+}
+
+.svgBoxImg {
+   width: 100%;
+   height: 100%;
+}
+
+.svgCard {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.svgCardTitle {
+   font-size: 22px;
+   color: #307fdb;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.svgCardSubtitle {
+   text-align: center;
+   font-size: 18px;
+   color: #363636;
+   font-weight: 300;
+   line-height: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+   .loadWrap {
+      padding: 6rem 4rem;
+   }
+   .loadTitle {
+      font-size: 42px;
+      color: #363636;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .loadSubtitle {
+      font-size: 18px;
+      color: #464545;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+}
+@media screen and (max-width: 760px) {
+   .loadTitle {
+      font-size: 38px;
+      color: #363636;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .loadSubtitle {
+      font-size: 17px;
+      color: #464545;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .loadWrap {
+      padding: 6rem 2rem;
+   }
+}

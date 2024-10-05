@@ -1,6 +1,7 @@
 .footer {
    width: 100%;
-   background: linear-gradient(120deg, #3479dd, #298dd9, #47b7d6);
+
+   background-color: #16212a;
    position: relative;
 }
 
@@ -15,7 +16,7 @@
 
 .footer .container {
    /* max-width: 1240px; */
-   padding: 3rem 6rem;
+   padding: 6rem;
    margin: auto;
    overflow: hidden;
    position: relative;
@@ -35,11 +36,12 @@
 }
 
 .footer .logoGridDesc {
-   width: 80%;
+   width: 100%;
    margin-bottom: 22px;
-   font-size: 16px;
-   line-height: 24px;
-   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 26px;
+   color: #aaa;
 }
 
 .footer .menu-box {
@@ -104,7 +106,7 @@ p {
 }
 
 .footer .content .rights p .meroVisionLink {
-   color: #10036c;
+   color: #989898;
 }
 .footer .content .rights p .meroVisionLink:hover {
    text-decoration: underline;
@@ -130,10 +132,11 @@ p {
 .g2ItemBox {
    display: flex;
    flex-direction: column;
+   width: 100%;
 }
 
 .itemBoxHead {
-   font-size: 16px;
+   font-size: 20px;
    font-weight: 500;
    text-transform: uppercase;
    line-height: 27px;
@@ -148,8 +151,8 @@ p {
 }
 
 .itemBoxLinks {
-   font-size: 14px;
-   font-weight: 400;
+   font-size: 16px;
+   font-weight: 500;
    text-transform: capitalize;
    line-height: 25px;
    color: #fff;
@@ -157,7 +160,7 @@ p {
 }
 
 .logoFooter {
-   width: 130px;
+   width: 80px;
    height: auto;
 }
 
@@ -216,8 +219,13 @@ p {
 }
 
 .itemBoxLinksBox {
-   color: #fff;
+   color: #aaa;
    text-decoration: none !important;
+   transition: 0.2s ease-in-out;
+   width: max-content;
+}
+.itemBoxLinksBox:hover {
+   color: #307fdb;
 }
 
 @media screen and (max-width: 1199px) {

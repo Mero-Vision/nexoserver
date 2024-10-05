@@ -1,9 +1,21 @@
-import { Box, Button, Grid } from "@mui/material";
+import CustomGlideButton from "@/components/common/CustomGlideButton/CustomGlideButton";
+import DnsOutlinedIcon from "@mui/icons-material/DnsOutlined";
+import FilterDramaIcon from "@mui/icons-material/FilterDrama";
+import StorageOutlinedIcon from "@mui/icons-material/StorageOutlined";
+import { Box, Grid } from "@mui/material";
 import "./styles.css";
-
 const Pricing = () => {
    const pricingData = [
       {
+         icon: (
+            <FilterDramaIcon
+               sx={{
+                  color: "#2f82da",
+                  fontSize: "70px",
+                  marginBottom: "10px",
+               }}
+            />
+         ),
          recomended: false,
          title: "Shared Hosting",
          subtitle: "Empower Your Business with Cloud Hosting",
@@ -113,8 +125,16 @@ const Pricing = () => {
          ],
       },
       {
+         icon: (
+            <StorageOutlinedIcon
+               sx={{
+                  color: "#2f82da",
+                  fontSize: "70px",
+                  marginBottom: "10px",
+               }}
+            />
+         ),
          recomended: true,
-
          title: "Dedicated Server",
          subtitle: "Unleash Business Potential with Cloud Hosting",
          price: "390",
@@ -229,8 +249,16 @@ const Pricing = () => {
          ],
       },
       {
+         icon: (
+            <DnsOutlinedIcon
+               sx={{
+                  color: "#2f82da",
+                  fontSize: "70px",
+                  marginBottom: "10px",
+               }}
+            />
+         ),
          recomended: false,
-
          title: "Cloud VPS",
          subtitle: "Transform Your Business with Cloud Power",
          price: "210",
@@ -365,6 +393,7 @@ const Pricing = () => {
                               )}
                            </Box>
                            <Box className="cardMainTop">
+                              {item?.icon}
                               <Box className="pricingTitle">
                                  {item?.title}
                               </Box>
@@ -381,9 +410,9 @@ const Pricing = () => {
                                  </span>
                               </Box>
 
-                              <Button className="cartBtn">
-                                 Add to cart
-                              </Button>
+                              <CustomGlideButton
+                                 title={"Add to cart"}
+                              />
                            </Box>
                            <Box className="cardMainBottom">
                               {item?.featureData?.map(

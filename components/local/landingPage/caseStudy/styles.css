@@ -1,0 +1,148 @@
+.caseWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+}
+
+.caseWrapBox {
+   max-width: 1300px;
+   width: 100%;
+   padding: 6rem 2rem 6rem 4rem;
+   border-radius: 12px;
+   background-color: #101920;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   min-height: 20px;
+   height: 100%;
+}
+
+.caseTitleBox {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+   justify-content: space-between;
+   width: 70%;
+   /* align-items: center; */
+}
+.caseTitle {
+   font-size: 36px;
+   color: #fff;
+   line-height: 43px;
+   font-weight: 700;
+   margin-bottom: 14px;
+   letter-spacing: 3px;
+}
+.caseSubtitle {
+   font-size: 16px;
+   color: #fff;
+   line-height: 30px;
+   font-weight: 400;
+   letter-spacing: 3px;
+}
+
+.barImgBox {
+   height: 100%;
+   width: 450px;
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   right: 30px;
+}
+
+.barImg {
+   height: 100%;
+   width: 100%;
+}
+
+.caseBtn {
+   min-height: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+   .caseWrap {
+      padding: 6rem 4rem;
+   }
+   .caseWrapBox {
+      max-width: 1300px;
+      width: 100%;
+      padding: 4rem 1rem 3rem 3rem;
+      border-radius: 12px;
+      background-color: #101920;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      height: 100%;
+   }
+   .caseTitle {
+      font-size: 42px;
+      color: #fff;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+   }
+   .caseSubtitle {
+      font-size: 18px;
+      color: #fff;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 3px;
+   }
+}
+
+@media screen and (max-width: 760px) {
+   .caseTitle {
+      font-size: 32px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+   }
+   .caseSubtitle {
+      font-size: 16px;
+      color: #fff;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 3px;
+   }
+
+   .caseWrap {
+      padding: 6rem 2rem;
+   }
+   .caseWrapBox {
+      max-width: 1300px;
+      width: 100%;
+      padding: 3rem 2.5rem 2rem 2.5rem;
+      border-radius: 12px;
+      background-color: #101920;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: 100%;
+   }
+   .caseTitleBox {
+      width: 100%;
+   }
+   .barImgBox {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 560px) {
+   .caseWrapBox {
+      max-width: 1300px;
+      width: 100%;
+      padding: 3rem 1.5rem 2rem 1.5rem;
+      border-radius: 12px;
+      background-color: #101920;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: 100%;
+   }
+}

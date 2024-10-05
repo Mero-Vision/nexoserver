@@ -1,0 +1,171 @@
+.chooseNexoWrap {
+   padding: 18rem 6rem 6rem 6rem;
+   margin-top: -8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #c9e2ff;
+   clip-path: ellipse(160% 85% at 50% 100%);
+}
+
+.chooseNexoWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.chooseNexoTitleBox {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 60px;
+   justify-content: center;
+   align-items: center;
+}
+.chooseNexoTitle {
+   font-size: 52px;
+   color: #363636;
+   line-height: 52px;
+   font-weight: 700;
+   margin-bottom: 14px;
+   letter-spacing: 3px;
+   text-align: center;
+}
+.chooseNexoSubtitle {
+   font-size: 20px;
+   color: #464545;
+   line-height: 34px;
+   font-weight: 400;
+   letter-spacing: 3px;
+   text-align: center;
+}
+
+.chooseCardMain {
+   border-radius: 18px;
+   background-color: #fff;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.chooseRecomendedBox {
+   width: 100% !important;
+   display: flex !important;
+   justify-content: end !important;
+   height: 40px;
+}
+
+.chooseRecomended {
+   text-align: end;
+   margin: 15px 20px 0px 0px;
+   background-color: #2f82d9;
+   color: #fff;
+   width: max-content;
+   padding: 3px 7px;
+   font-size: 14px;
+   border-radius: 6px;
+}
+
+.chooseCardMainTop {
+   border-radius: 18px;
+   background-color: #fff;
+   padding: 10px 50px;
+   min-height: 310px;
+   height: 100%;
+}
+
+.chooseCardMainBottom {
+   background-color: #2f82da;
+   border-radius: 0px 0px 18px 18px;
+   padding: 40px 50px;
+}
+
+.chooseTitle {
+   font-size: 28px;
+   font-weight: 600;
+   color: #3a3a3a;
+   margin-bottom: 16px;
+}
+.chooseSubtitle {
+   font-size: 14px;
+   font-weight: 400;
+   color: #504f4f;
+   margin-bottom: 22px;
+}
+
+@media screen and (max-width: 1080px) {
+   .chooseNexoWrap {
+      padding: 18rem 4rem 6rem 4rem;
+      margin-top: -8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c9e2ff;
+      clip-path: ellipse(160% 85% at 50% 100%);
+   }
+   .chooseNexoTitle {
+      font-size: 42px;
+      color: #363636;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .chooseNexoSubtitle {
+      font-size: 18px;
+      color: #464545;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+}
+@media screen and (max-width: 899px) {
+   .chooseNexoWrap {
+      padding: 24rem 2rem 6rem 2rem;
+      margin-top: -14rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c9e2ff;
+      clip-path: ellipse(260% 85% at 50% 100%);
+   }
+}
+@media screen and (max-width: 760px) {
+   .chooseNexoTitle {
+      font-size: 32px;
+      color: #363636;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .chooseNexoSubtitle {
+      font-size: 16px;
+      color: #464545;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+
+   .chooseNexoWrap {
+      padding: 24rem 2rem 6rem 2rem;
+      margin-top: -14rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c9e2ff;
+      clip-path: ellipse(260% 85% at 50% 100%);
+   }
+}
+
+@media screen and (max-width: 585px) {
+   .chooseNexoWrap {
+      padding: 24rem 2rem 6rem 2rem;
+      margin-top: -14rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c9e2ff;
+      clip-path: ellipse(360% 85% at 50% 100%);
+   }
+}

@@ -1,0 +1,55 @@
+.lbcardsWrap {
+   padding: 0rem 6rem 6rem 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+}
+
+.lbcardsWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.lbcardsMain {
+   display: flex;
+   align-items: center;
+   background-color: #101920;
+   padding: 30px 40px;
+   border-radius: 12px;
+}
+
+.lbcardsIcon {
+   padding-right: 25px;
+   border-right: 1px solid #737373;
+}
+
+.lbcardsInfo {
+   display: flex;
+   flex-direction: column;
+   padding-left: 25px;
+}
+
+.lbcardsInfoTitle {
+   font-size: 22px;
+   font-weight: 600;
+   margin-bottom: 10px;
+   color: #fff;
+}
+.lbcardsInfoDesc {
+   font-size: 14px;
+   font-weight: 400;
+   color: #fff;
+}
+
+@media screen and (max-width: 1080px) {
+   .lbcardsWrap {
+      padding: 6rem 4rem;
+   }
+}
+
+@media screen and (max-width: 760px) {
+   .lbcardsWrap {
+      padding: 6rem 2rem;
+   }
+}

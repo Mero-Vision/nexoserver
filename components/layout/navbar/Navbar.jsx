@@ -24,7 +24,7 @@ const Navbar = () => {
       { name: "Domains", url: "/domains" },
       { name: "Blogs", url: "/blogs" },
       { name: "About Us", url: "/about-us" },
-      { name: "Support", url: "/support" },
+      // { name: "Support", url: "/support" },
    ];
 
    const handleScroll = () => {

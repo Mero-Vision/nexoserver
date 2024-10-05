@@ -1,0 +1,95 @@
+.mapWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #16212a;
+}
+
+.mapWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.mapTitleBox {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 60px;
+   justify-content: center;
+   align-items: center;
+}
+.mapTitle {
+   font-size: 52px;
+   color: #fff;
+   line-height: 52px;
+   font-weight: 700;
+   margin-bottom: 14px;
+   letter-spacing: 3px;
+   text-align: center;
+}
+.mapSubtitle {
+   font-size: 20px;
+   color: #fff;
+   line-height: 34px;
+   font-weight: 400;
+   letter-spacing: 3px;
+   text-align: center;
+}
+
+.svgBoxMap {
+   width: 100%;
+   height: auto;
+   margin-bottom: 20px;
+}
+
+.svgBoxMapImg {
+   width: 100%;
+   height: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+   .mapWrap {
+      padding: 6rem 4rem;
+   }
+   .mapTitle {
+      font-size: 42px;
+      color: #fff;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .mapSubtitle {
+      font-size: 18px;
+      color: #fff;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 760px) {
+   .mapTitle {
+      font-size: 32px;
+      color: #fff;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .mapSubtitle {
+      font-size: 16px;
+      color: #fff;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+
+   .mapWrap {
+      padding: 6rem 2rem;
+   }
+}

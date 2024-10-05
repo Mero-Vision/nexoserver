@@ -14,11 +14,19 @@ const Footer = ({ data }) => {
 
    const footerHeaders = [
       {
-         head: "Solutions",
+         head: "Hosting",
          subLinks: [
-            { link: "Destinations", url: "/destinations" },
-            { link: "Services", url: "/services" },
-            { link: "Timeline", url: "/timeline" },
+            { link: "Shared Hosting", url: "/shared-hosting" },
+            { link: "Dedicated Server", url: "/dedicated-server" },
+            { link: "Cloud Virtual (VPS)", url: "/cloud-virtual" },
+            { link: "Domain Names)", url: "/domain-names" },
+         ],
+      },
+      {
+         head: "Support",
+         subLinks: [
+            { link: "Contact Us", url: "/contact-us" },
+            { link: "FAQ", url: "/faq" },
          ],
       },
       {
@@ -26,11 +34,7 @@ const Footer = ({ data }) => {
          subLinks: [
             { link: "About Us", url: "/about-us" },
             { link: "Blogs", url: "/blogs" },
-         ],
-      },
-      {
-         head: "Legal",
-         subLinks: [
+            { link: "Features", url: "/features" },
             { link: "Privacy", url: "/privacy-policy" },
             { link: "Terms", url: "/terms-and-conditions" },
          ],
@@ -42,7 +46,40 @@ const Footer = ({ data }) => {
          {/* <Image src={mountainImg} alt="img" className="mountainImg" /> */}
          <div className="container">
             <Grid container spacing={6}>
-               <Grid item lg={4.2} xs={12}>
+               <Grid item lg={9} xs={12}>
+                  <Box className="footerG2">
+                     {footerHeaders?.map((item, index) => (
+                        <Box key={index} className="g2ItemBox">
+                           <Box className="itemBoxHead" key="index">
+                              {item?.head}
+                           </Box>
+                           <Box className="itemBoxLinksBox">
+                              {item?.subLinks?.map((item, index) => (
+                                 <Box
+                                    className="itemBoxLinks"
+                                    key={index}
+                                 >
+                                    <Link
+                                       className="itemBoxLinksBox"
+                                       style={{
+                                          textDecoration:
+                                             "none !important",
+                                          underline:
+                                             "none !important",
+                                          color: "red !important",
+                                       }}
+                                       href={item?.url}
+                                    >
+                                       {item?.link}
+                                    </Link>
+                                 </Box>
+                              ))}
+                           </Box>
+                        </Box>
+                     ))}
+                  </Box>
+               </Grid>
+               <Grid item lg={3} xs={12}>
                   <div className="logo">
                      <div>
                         <div style={{ marginBottom: "20px" }}>
@@ -118,58 +155,6 @@ const Footer = ({ data }) => {
                      </div>
                   </div>
                </Grid>
-               <Grid item lg={4.3} xs={12}>
-                  <Box className="footerG2">
-                     {footerHeaders?.map((item, index) => (
-                        <Box key={index} className="g2ItemBox">
-                           <Box className="itemBoxHead" key="index">
-                              {item?.head}
-                           </Box>
-                           <Box className="itemBoxLinksBox">
-                              {item?.subLinks?.map((item, index) => (
-                                 <Box
-                                    className="itemBoxLinks"
-                                    key={index}
-                                 >
-                                    <Link
-                                       className="itemBoxLinksBox"
-                                       style={{
-                                          textDecoration:
-                                             "none !important",
-                                          underline:
-                                             "none !important",
-                                          color: "red !important",
-                                       }}
-                                       href={item?.url}
-                                    >
-                                       {item?.link}
-                                    </Link>
-                                 </Box>
-                              ))}
-                           </Box>
-                        </Box>
-                     ))}
-                  </Box>
-               </Grid>
-               <Grid item lg={3.5} xs={12}>
-                  <Box className="g2Grid">
-                     <Box className="addressBox">
-                        <Box className="addressHead">Address</Box>
-                        <Box className="addressInfo">Santinagar</Box>
-                     </Box>
-                     <Box className="inquiriesBox">
-                        <Box className="inquiriesBoxHead">
-                           Inquiries
-                        </Box>
-                        <Box className="inquiriesInfo">
-                           987873837833
-                        </Box>
-                        <Box className="inquiriesInfo">
-                           nexo@mail.com
-                        </Box>
-                     </Box>
-                  </Box>
-               </Grid>
             </Grid>
          </div>
          <div className="footer-bottom">
@@ -177,7 +162,7 @@ const Footer = ({ data }) => {
                <div className="rights">
                   <p>
                      &copy; Copyright {yearToday} © All Right
-                     Reserved. Designed by{" "}
+                     Reserved. Powered by{" "}
                      <span
                         // onClick={() =>
                         //    window.open("https://merovision.com/")

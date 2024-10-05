@@ -1,16 +1,34 @@
-// import heroBg from "@/public/assets/serverImg.png";
+"use client";
 import heroBg from "@/public/assets/serverImg.png";
 import { Box } from "@mui/material";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { useRef } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import "./styles.css";
 
 const Hero = () => {
+   const ref = useRef(null);
+   const isInView = useInView(ref, { once: true });
    return (
       <Box className="heroWrap">
          <Box className="heroWrapBox">
             <Box className="heroMainTitleBox">
-               <Box className="heroMainTitle">
+               <motion.div
+                  className="heroMainTitle"
+                  ref={ref}
+                  initial={{ y: 90, opacity: 0 }}
+                  animate={isInView ? { y: 0, opacity: 1 } : {}}
+                  transition={{
+                     duration: 0.7,
+                     bounce: 0.5,
+                     damping: 40,
+                     x: {
+                        type: "spring",
+                        stiffness: 300,
+                     },
+                  }}
+               >
                   Dedicated With <br />{" "}
                   <span>
                      <Typewriter
@@ -26,23 +44,51 @@ const Hero = () => {
                         // delaySpeed={1000}
                      />
                   </span>{" "}
-               </Box>
-               <Box className="heroMainSubtitle">
+               </motion.div>
+               <motion.div
+                  className="heroMainSubtitle"
+                  ref={ref}
+                  initial={{ y: 90, opacity: 0 }}
+                  animate={isInView ? { y: 0, opacity: 1 } : {}}
+                  transition={{
+                     duration: 0.8,
+                     bounce: 0.5,
+                     damping: 40,
+                     x: {
+                        type: "spring",
+                        stiffness: 300,
+                     },
+                  }}
+               >
                   Powerful servers with high-end resourses that will
                   gurantee <br /> resourses exclusivity, starting at
                   just{" "}
                   <span className="heroMainSubtitleSpan">
                      $ 90.22/mo
                   </span>{" "}
-               </Box>
-               <div className="search-bar-container">
+               </motion.div>
+               <motion.div
+                  className="search-bar-container"
+                  ref={ref}
+                  initial={{ y: 90, opacity: 0 }}
+                  animate={isInView ? { y: 0, opacity: 1 } : {}}
+                  transition={{
+                     duration: 0.9,
+                     bounce: 0.5,
+                     damping: 40,
+                     x: {
+                        type: "spring",
+                        stiffness: 300,
+                     },
+                  }}
+               >
                   <input
                      type="text"
                      className="search-input"
                      placeholder="Search for a domain name..."
                   />
                   <button className="search-button">Search</button>
-               </div>
+               </motion.div>
             </Box>
             <Box className="heroBgBox">
                <Image
