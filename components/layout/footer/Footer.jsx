@@ -1,7 +1,7 @@
 "use client";
 import { Box, Grid } from "@mui/material";
 // import { useRouter } from "next/";
-import logoFooter from "@/public/assets/logo.png";
+import logoFooter from "@/public/assets/logoFooter.png";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";

@@ -103,12 +103,13 @@ const Navbar = () => {
             >
                <div className="logo">
                   <Link href="/" passHref className="navbarLink">
-                     <Box>
+                     <Box className="logoNavBox">
                         <Image
+                           className="logoNav"
                            src={logoFooter}
                            alt="img"
-                           width={40}
-                           height={40}
+                           // width={150}
+                           // height={150}
                         />
                      </Box>
                   </Link>
@@ -171,12 +172,13 @@ const Navbar = () => {
                               }}
                            >
                               <div style={{ width: "80px " }}>
-                                 <Box>
+                                 <Box className="logoNavMob">
                                     <Image
+                                       className="logoNavImg"
                                        src={logoFooter}
                                        alt="img"
-                                       width={40}
-                                       height={40}
+                                       // width={40}
+                                       // height={40}
                                     />
                                  </Box>
                               </div>

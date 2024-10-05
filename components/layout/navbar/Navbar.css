@@ -238,6 +238,15 @@ header .logo img {
    height: 100%;
 }
 
+.logoNavBox {
+   width: 180px;
+   height: 100%;
+}
+.logoNav {
+   width: 100%;
+   height: 100%;
+}
+
 .signupBtn {
    color: #fff !important;
    background-color: #4285f4 !important;
@@ -363,6 +372,14 @@ header .logo img {
       /* height: calc(100%); */
       overflow-y: auto;
       width: 100%;
+   }
+   .logoNavMob {
+      width: 120px !important;
+      height: 100% !important;
+   }
+   .logoNavImg {
+      width: 100% !important;
+      height: 100% !important;
    }
 }
 
