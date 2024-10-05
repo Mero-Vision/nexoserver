@@ -10,7 +10,7 @@ const Pricing = () => {
          icon: (
             <FilterDramaIcon
                sx={{
-                  color: "#2f82da",
+                  color: "#fff",
                   fontSize: "70px",
                   marginBottom: "10px",
                }}
@@ -128,7 +128,7 @@ const Pricing = () => {
          icon: (
             <StorageOutlinedIcon
                sx={{
-                  color: "#2f82da",
+                  color: "#fff",
                   fontSize: "70px",
                   marginBottom: "10px",
                }}
@@ -252,7 +252,7 @@ const Pricing = () => {
          icon: (
             <DnsOutlinedIcon
                sx={{
-                  color: "#2f82da",
+                  color: "#fff",
                   fontSize: "70px",
                   marginBottom: "10px",
                }}
@@ -411,6 +411,7 @@ const Pricing = () => {
                               </Box>
 
                               <CustomGlideButton
+                                 whiteBg
                                  title={"Add to cart"}
                               />
                            </Box>

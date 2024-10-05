@@ -1,6 +1,6 @@
 .chooseNexoWrap {
-   padding: 18rem 6rem 6rem 6rem;
-   margin-top: -8rem;
+   padding: 16rem 6rem 6rem 6rem;
+   /* margin-top: 8rem; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 1080px) {
    .chooseNexoWrap {
-      padding: 18rem 4rem 6rem 4rem;
+      padding: 16rem 4rem 6rem 4rem;
       margin-top: -8rem;
       display: flex;
       justify-content: center;
@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 585px) {
    .chooseNexoWrap {
-      padding: 24rem 2rem 6rem 2rem;
+      padding: 14rem 2rem 6rem 2rem;
       margin-top: -14rem;
       display: flex;
       justify-content: center;

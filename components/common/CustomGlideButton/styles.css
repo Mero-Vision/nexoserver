@@ -26,3 +26,17 @@
    color: #fff !important;
    margin-top: 0px !important;
 }
+.cartBtnWhite {
+   background-color: #ffff !important;
+   color: #3a3a3a !important;
+   border-radius: 50px !important;
+   padding: 10px 20px !important;
+   text-transform: capitalize !important;
+   margin-top: 5px !important;
+   transition: 0.4s ease-in-out !important;
+}
+.cartBtnWhite:hover {
+   background-color: #3a3a3a !important;
+   color: #fff !important;
+   margin-top: 0px !important;
+}
