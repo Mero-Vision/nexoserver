@@ -1,10 +1,13 @@
 "use client";
-import HeroPage from "./heroPage/HeroPage";
+
+import Hero from "./heroPage/Hero";
+import Pricing from "./pricing/Pricing";
 
 const LandingPage = () => {
    return (
       <>
-         <HeroPage />
+         <Hero />
+         <Pricing />
       </>
    );
 };

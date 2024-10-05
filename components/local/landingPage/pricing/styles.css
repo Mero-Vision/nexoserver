@@ -1,0 +1,128 @@
+.background-container {
+   height: 100%; /* Full viewport height */
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   background-color: #28292a;
+   background-image: url("../../../../public/assets/lannding/bgLineImg.svg"); /* Replace with your image URL */
+   background-size: contain;
+   background-position: center;
+   position: relative;
+}
+
+.pricingWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pricingWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.cardMain {
+   border-radius: 18px;
+   background-color: #fff;
+}
+
+.recomendedBox {
+   width: 100% !important;
+   display: flex !important;
+   justify-content: end !important;
+   height: 40px;
+}
+
+.recomended {
+   text-align: end;
+   margin: 15px 20px 0px 0px;
+   background-color: #2f82d9;
+   color: #fff;
+   width: max-content;
+   padding: 3px 7px;
+   font-size: 14px;
+   border-radius: 6px;
+}
+
+.cardMainTop {
+   border-radius: 18px 18px 0px 0px;
+   background-color: #fff;
+   padding: 50px;
+   padding-top: 30px;
+   height: 280px;
+}
+
+.cardMainBottom {
+   background-color: #2f82da;
+   border-radius: 0px 0px 18px 18px;
+   padding: 40px 50px;
+}
+
+.pricingTitle {
+   font-size: 28px;
+   font-weight: 600;
+   color: #3a3a3a;
+   margin-bottom: 8px;
+}
+.pricingSubtitle {
+   font-size: 14px;
+   font-weight: 400;
+   color: #504f4f;
+   margin-bottom: 14px;
+}
+.pricingPrice {
+   font-size: 35px;
+   font-weight: 700;
+   color: #262626;
+   margin-bottom: 16px;
+   /* display: flex;
+   align-items: end; */
+}
+
+.pricingIcon {
+   font-size: 20px;
+   font-weight: 700;
+   color: #262626;
+   margin-top: -50px !important;
+   /* display: flex;
+   align-items: start; */
+}
+.pricingPriceSpan {
+   font-size: 15px;
+   font-weight: 400;
+   color: #4b4b4b;
+}
+
+.cartBtn {
+   background-color: #2f82da !important;
+   color: #fff !important;
+   border-radius: 50px !important;
+   padding: 10px 20px !important;
+   text-transform: capitalize !important;
+   margin-top: 5px !important;
+   transition: 0.4s ease-in-out !important;
+}
+.cartBtn:hover {
+   background-color: #3a3a3a !important;
+   color: #fff !important;
+   margin-top: 0px !important;
+}
+
+.featureTitleMainCard {
+   margin-bottom: 20px;
+}
+
+.featureTitleMain {
+   font-size: 18px;
+   font-weight: 600;
+   color: #ffffff;
+   margin-bottom: 10px;
+}
+
+.featuresItems {
+   font-size: 14px;
+   font-weight: 400;
+   color: #d6d6d6;
+   margin-bottom: 8px;
+}

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import "./styles.css";
 
-const HeroPage = () => {
+const Hero = () => {
    return (
       <Box className="heroWrap">
          <Box className="heroWrapBox">
@@ -56,4 +56,4 @@ const HeroPage = () => {
    );
 };
 
-export default HeroPage;
+export default Hero;
