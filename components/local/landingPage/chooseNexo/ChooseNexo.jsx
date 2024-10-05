@@ -97,7 +97,7 @@ const ChooseNexo = () => {
                   className="chooseNexoSubtitle"
                >
                   SLA as standard on all plans - if uptime falls below
-                  99.9% in a certain month, we'll give you a free
+                  99.9% in a certain month, we will give you a free
                   month of service.
                </motion.div>
             </div>
