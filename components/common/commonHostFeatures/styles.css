@@ -1,0 +1,118 @@
+.featuresCommonWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f4f9fe;
+}
+
+.featuresCommonWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.featuresCommonTitleBox {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 60px;
+   justify-content: start;
+   align-items: start;
+}
+.featuresCommonTitle {
+   font-size: 40px;
+   color: #363636;
+   line-height: 52px;
+   font-weight: 700;
+   margin-bottom: 16px;
+   letter-spacing: 3px;
+   text-align: start;
+}
+.featuresCommonSubtitle {
+   font-size: 15px;
+   color: #464545;
+   line-height: 24px;
+   font-weight: 400;
+   letter-spacing: 3px;
+   text-align: start;
+   margin-bottom: 29px;
+}
+
+.featuresCommonFearuresItem {
+   font-size: 15px;
+   color: #464545;
+   font-weight: 600;
+   margin-bottom: 8px;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+}
+
+.featuresCommonFearuresItemIcon {
+   font-size: 16px !important;
+   color: #0874ff;
+}
+
+.featuresCommonFearuresImage {
+   border-radius: 12px;
+   width: 100%;
+   height: auto;
+}
+
+@media screen and (max-width: 1080px) {
+   .featuresCommonWrap {
+      padding: 6rem 4rem;
+   }
+   .featuresCommonTitle {
+      font-size: 36px;
+      color: #363636;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .featuresCommonSubtitle {
+      font-size: 15px;
+      color: #464545;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .featuresCommonTitleBox {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+      justify-content: center;
+      align-items: center;
+   }
+}
+@media screen and (max-width: 760px) {
+   .featuresCommonWrap {
+      padding: 6rem 2rem;
+   }
+   .featuresCommonTitle {
+      font-size: 32px;
+      color: #363636;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .featuresCommonSubtitle {
+      font-size: 14px;
+      color: #464545;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .featuresCommonTitleBox {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+      justify-content: center;
+      align-items: center;
+   }
+}

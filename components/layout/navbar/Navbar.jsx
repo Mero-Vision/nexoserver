@@ -1,15 +1,29 @@
 "use client";
 import CommonScreenWidthChecker from "@/components/common/commomScreenWidthChecker/CommonScreen'WidthChecker";
-import logoFooter from "@/public/assets/logo.png";
+import logo from "@/public/assets/logo.png";
+import logoFooter from "@/public/assets/logoFooter.png";
+import cloudImg from "@/public/assets/navHosting/cloud.svg";
+import dedicatedImg from "@/public/assets/navHosting/dedicated.svg";
+import resellerImg from "@/public/assets/navHosting/reseller.svg";
+import sharedImg from "@/public/assets/navHosting/shared.svg";
+import vpsImg from "@/public/assets/navHosting/vps.svg";
+import wordpressImg from "@/public/assets/navHosting/wordpress.svg";
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Box } from "@mui/material";
+import {
+   Accordion,
+   AccordionDetails,
+   AccordionSummary,
+   Box,
+} from "@mui/material";
 import Image from "next/image";
 import Link from "next/link"; // Import Link from next/link
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
+import NavModalBox from "./NavModalBox";
 
 const Navbar = () => {
    const router = useRouter();
@@ -17,18 +31,76 @@ const Navbar = () => {
    const [navBackground, setNavBackground] = useState(false);
    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
    const navMenuRef = useRef(null);
+   const [expandedDomain, setExpandedDomain] = useState(false);
+   const [expandedHosting, setExpandedHosting] = useState(false);
+
+   console.log({ router });
+
+   const handleDomainChange = (panel) => (event, isExpanded) => {
+      setExpandedDomain(isExpanded ? panel : false);
+   };
+
+   const handleHostingChange = (panel) => (event, isExpanded) => {
+      setExpandedHosting(isExpanded ? panel : false);
+   };
 
    const navItems = [
       { name: "Home", url: "/" },
-      { name: "Hosting", url: "/hosting" },
-      { name: "Domains", url: "/domains" },
       { name: "Blogs", url: "/blogs" },
-      { name: "About Us", url: "/about-us" },
-      // { name: "Support", url: "/support" },
+   ];
+
+   const domainCategory = [
+      { name: "Domain Checker", url: "/domain-checker" },
+      {
+         name: "Domain Transfer",
+         url: "/domain-transfer",
+      },
+      {
+         name: "Domain Registration",
+         url: "/domain-registration",
+      },
+   ];
+   const hostingCategory = [
+      {
+         name: "Shared Hosting",
+         desc: "Manage Shared Hosting",
+         url: "/shared-hosting",
+         img: sharedImg,
+      },
+      {
+         name: "Reseller Hosting",
+         desc: "Earn Additional Revenue",
+         url: "/reseller-hosting",
+         img: resellerImg,
+      },
+      {
+         name: "Wordpress Hosting",
+         desc: "WordPress Hosting Speed",
+         url: "/wordpress-hosting",
+         img: wordpressImg,
+      },
+      {
+         name: "Dedicated Hosting",
+         desc: "Hosting That Gives You Tools",
+         url: "/dedicated-hosting",
+         img: dedicatedImg,
+      },
+      {
+         name: "Vps Hosting",
+         desc: "Dedicated Resourses",
+         url: "/vps-hosting",
+         img: vpsImg,
+      },
+      {
+         name: "Cloud Hosting",
+         desc: "Manage Cloud Hosting",
+         url: "/cloud-hosting",
+         img: cloudImg,
+      },
    ];
 
    const handleScroll = () => {
-      setNavBackground(window.scrollY > 10);
+      setNavBackground(window.scrollY > 100);
    };
 
    const handleResize = () => {
@@ -84,6 +156,14 @@ const Navbar = () => {
          setModalWidth("200px"); // fallback for very small screens
       }
    }, [screenWidth]);
+   const pathname = usePathname();
+
+   // Check if pathname matches specific paths
+   const isActive = [
+      "shared-hosting",
+      "server-dom",
+      "domain-name",
+   ].some((path) => pathname.includes(path));
    return (
       <>
          <header
@@ -106,7 +186,15 @@ const Navbar = () => {
                      <Box className="logoNavBox">
                         <Image
                            className="logoNav"
-                           src={logoFooter}
+                           src={
+                              !isActive && !navBackground
+                                 ? logo
+                                 : isActive && !navBackground
+                                 ? logoFooter
+                                 : navBackground
+                                 ? logo
+                                 : logoFooter
+                           }
                            alt="img"
                            // width={150}
                            // height={150}
@@ -116,13 +204,58 @@ const Navbar = () => {
                </div>
                {windowWidth > 1250 ? (
                   <ul className="nav-menu">
-                     {navItems.map((item, index) => (
+                     {navItems?.slice(0, 1).map((item, index) => (
                         <NavLink
                            item={item}
                            key={index}
                            navBackground={navBackground}
                         />
                      ))}
+                     <li className="nav-item">
+                        <div
+                           // onClick={(e) =>
+                           //    handleMenuOpen(e, "hosting")
+                           // }
+                           className={
+                              navBackground
+                                 ? "nav-link"
+                                 : "nav-link-background"
+                           }
+                        >
+                           <NavModalBox
+                              hosting
+                              props={"Hosting"}
+                              menuData={hostingCategory}
+                              navBackground
+                           />
+                        </div>
+                     </li>
+                     {navItems?.slice(1, 2).map((item, index) => (
+                        <NavLink
+                           item={item}
+                           key={index}
+                           navBackground={navBackground}
+                        />
+                     ))}
+                     <li className="nav-item">
+                        <div
+                           // onClick={(e) =>
+                           //    handleMenuOpen(e, "domain")
+                           // }
+                           className={
+                              navBackground
+                                 ? "nav-link"
+                                 : "nav-link-background"
+                           }
+                        >
+                           <NavModalBox
+                              props={"Domains"}
+                              menuData={domainCategory}
+                              navBackground={navBackground}
+                           />
+                        </div>
+                     </li>
+
                      <li className="nav-item">
                         <Box
                            // onClick={() => setLoginOpen(true)}
@@ -198,13 +331,36 @@ const Navbar = () => {
                      </Box>
                   </li>
                   <ul className="list-items">
-                     {navItems.map((item, index) => (
+                     {navItems?.slice(0, 1)?.map((item, index) => (
                         <NavLinkMobile
                            item={item}
                            key={index}
                            setClick={setClick}
                         />
                      ))}
+                     <li className="nav-item">
+                        <AccordianHosting
+                           item={hostingCategory}
+                           expanded={expandedHosting}
+                           handleChange={handleHostingChange}
+                           setClick={setClick}
+                        />
+                     </li>
+                     {navItems?.slice(1, 2)?.map((item, index) => (
+                        <NavLinkMobile
+                           item={item}
+                           key={index}
+                           setClick={setClick}
+                        />
+                     ))}
+                     <li className="nav-item">
+                        <AccordianDomain
+                           item={domainCategory}
+                           expanded={expandedDomain}
+                           handleChange={handleDomainChange}
+                           setClick={setClick}
+                        />
+                     </li>
                      <li className="nav-item">
                         <Box
                            // onClick={() => {
@@ -229,17 +385,20 @@ const Navbar = () => {
 
 const NavLink = ({ item, navBackground }) => {
    const pathname = usePathname();
-   const isActive =
-      pathname === item.url ||
-      (pathname.startsWith(item.url) &&
-         (item.url !== "/" || pathname === "/"));
+
+   // Check if pathname matches specific paths
+   const isActive = [
+      "shared-hosting",
+      "server-dom",
+      "domain-name",
+   ].some((path) => pathname.includes(path));
 
    return (
       <li className="nav-item">
          <Link href={item.url} passHref className="navbarLink">
             <div
                className={
-                  isActive
+                  isActive && !navBackground
                      ? "activeLink"
                      : navBackground
                      ? "nav-link"
@@ -249,9 +408,8 @@ const NavLink = ({ item, navBackground }) => {
                {item.name}
             </div>
          </Link>
-         {/* <div
-            className={isActive ? "activeBar" : "inactiveBar"}
-         ></div> */}
+         {/* Uncomment if you need the active bar */}
+         {/* <div className={isActive ? "activeBar" : "inactiveBar"}></div> */}
       </li>
    );
 };
@@ -281,14 +439,14 @@ const NavLinkMobile = ({ item, setClick }) => {
             >
                <ChevronLeftRoundedIcon
                   sx={{
-                     color: isActive ? "#508BC7" : "#424242",
+                     color: "#424242",
                      paddingTop: "10px",
                      fontSize: "26px",
                   }}
                />
                <div
                   style={{
-                     color: isActive ? "#508BC7" : "#424242",
+                     color: "#424242",
                      paddingTop: "10px",
                      fontSize: "14px",
                      paddingLeft: "10px",
@@ -303,4 +461,168 @@ const NavLinkMobile = ({ item, setClick }) => {
    );
 };
 
+const AccordianDomain = ({
+   item,
+   expanded,
+   handleChange,
+   setClick,
+}) => {
+   const router = useRouter();
+   return (
+      <div>
+         <Accordion
+            elevation={0}
+            expanded={expanded === item.category_name}
+            onChange={handleChange(item.category_name)}
+            sx={{
+               "& .MuiAccordionSummary-root": {
+                  padding: "0px ",
+                  minHeight: "21px",
+               },
+               "& .MuiAccordionSummary-content": {
+                  margin: "8px 0px ",
+               },
+               "& .MuiAccordionDetails-root": {
+                  padding: "10px 0px 10px 10px ",
+
+                  textAlign: "start",
+                  borderBottom: "1px solid #e7e8e8",
+                  "&:last-child": {
+                     borderBottom: "none",
+                  },
+               },
+            }}
+         >
+            <AccordionSummary
+               expandIcon={<KeyboardArrowDownIcon />}
+               aria-controls="panel1-content"
+               id="panel1-header"
+            >
+               <Box
+                  sx={{
+                     fontSize: "14px",
+                     color: "#424242",
+                     fontWeight: "500",
+                     marginLeft: "37px",
+                  }}
+               >
+                  Domain
+               </Box>
+            </AccordionSummary>
+            {item?.map((data, index) => (
+               <AccordionDetails
+                  key={index}
+                  sx={{
+                     "& .MuiAccordionDetails-root": {
+                        border: "none !important",
+                        padding: "0px ",
+                        outline: "none !important",
+                     },
+                  }}
+               >
+                  <Box
+                     onClick={() => {
+                        router.push(data?.url || "/"),
+                           setClick(false),
+                           document.body.classList.remove(
+                              "no-scroll"
+                           );
+                     }}
+                     sx={{
+                        fontSize: "13px",
+                        color: "#2F82D9",
+                        cursor: "pointer",
+                        paddingLeft: "30px",
+                     }}
+                  >
+                     {data?.name}
+                  </Box>
+               </AccordionDetails>
+            ))}
+         </Accordion>
+      </div>
+   );
+};
+const AccordianHosting = ({
+   item,
+   expanded,
+   handleChange,
+   setClick,
+}) => {
+   const router = useRouter();
+   return (
+      <div>
+         <Accordion
+            elevation={0}
+            expanded={expanded === item.category_name}
+            onChange={handleChange(item.category_name)}
+            sx={{
+               "& .MuiAccordionSummary-root": {
+                  padding: "0px ",
+                  minHeight: "21px",
+               },
+               "& .MuiAccordionSummary-content": {
+                  margin: "8px 0px ",
+               },
+               "& .MuiAccordionDetails-root": {
+                  padding: "10px 0px 10px 10px ",
+
+                  textAlign: "start",
+                  borderBottom: "1px solid #e7e8e8",
+                  "&:last-child": {
+                     borderBottom: "none",
+                  },
+               },
+            }}
+         >
+            <AccordionSummary
+               expandIcon={<KeyboardArrowDownIcon />}
+               aria-controls="panel1-content"
+               id="panel1-header"
+            >
+               <Box
+                  sx={{
+                     fontSize: "14px",
+                     color: "#424242",
+                     fontWeight: "500",
+                     marginLeft: "37px",
+                  }}
+               >
+                  Hosting
+               </Box>
+            </AccordionSummary>
+            {item?.map((data, index) => (
+               <AccordionDetails
+                  key={index}
+                  sx={{
+                     "& .MuiAccordionDetails-root": {
+                        border: "none !important",
+                        padding: "0px ",
+                        outline: "none !important",
+                     },
+                  }}
+               >
+                  <Box
+                     onClick={() => {
+                        router.push(data?.url || "/"),
+                           setClick(false),
+                           document.body.classList.remove(
+                              "no-scroll"
+                           );
+                     }}
+                     sx={{
+                        fontSize: "13px",
+                        color: "#2F82D9",
+                        cursor: "pointer",
+                        paddingLeft: "30px",
+                     }}
+                  >
+                     {data?.name}
+                  </Box>
+               </AccordionDetails>
+            ))}
+         </Accordion>
+      </div>
+   );
+};
 export default Navbar;

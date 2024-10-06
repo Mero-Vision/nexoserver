@@ -85,7 +85,7 @@ header .logo img {
 }
 
 .activeLink {
-   color: #508bc7;
+   color: #fff;
    font-weight: 500;
    font-size: 15px;
    cursor: pointer;
