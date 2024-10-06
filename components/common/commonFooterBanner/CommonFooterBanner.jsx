@@ -21,7 +21,7 @@ const CommonFooterBanner = () => {
                      Need help choosing a plan?{" "}
                   </div>
                   <div className="footerBannerCommonTitle">
-                     Need help? We're <br /> always here for you.
+                     Need help? We are <br /> always here for you.
                   </div>
                </div>
                <Box className="footerBannerCommonRightBtnBox">
