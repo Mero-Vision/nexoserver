@@ -1,11 +1,17 @@
 "use client";
 
-import hostBannerImg from "@/public/assets/pages/hosting/hostBannerImg.svg";
 import { Box, Grid } from "@mui/material";
 import Image from "next/image";
 import "./styles.css";
 
-const CommonHostBanner = ({ children }) => {
+const CommonHostBanner = ({
+   children,
+   title1,
+   title2,
+   desc,
+   button,
+   img,
+}) => {
    return (
       <div className="backgroundContainerHostBanner">
          <Box className="hostBannerWrap">
@@ -14,13 +20,15 @@ const CommonHostBanner = ({ children }) => {
                   <Grid item lg={6} md={6} sm={12} xs={12}>
                      <Box className="hostBannerInfoBox">
                         <Box className="hostBannerButton">
-                           Starting at $25
+                           {button}
                         </Box>
                         <Box className="hostBannerTitle">
-                           Shared Website <br /> Hosting
+                           {title1}
+                           <br />
+                           {title2}
                         </Box>
                         <Box className="hostBannerSubtitle">
-                           Everything you need to launch a website.
+                           {desc}
                         </Box>
                         {children}
                      </Box>
@@ -35,7 +43,7 @@ const CommonHostBanner = ({ children }) => {
                   >
                      <Box className="hostBannerImgBox">
                         <Image
-                           src={hostBannerImg}
+                           src={img}
                            alt="img"
                            className="hostBannerImg"
                         />

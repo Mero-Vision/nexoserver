@@ -1,0 +1,60 @@
+.childComponentCloud {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.childComponentCardCloud {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.childComponentCard {
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 26px;
+   color: #fff;
+   font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 995px) {
+   .childComponentCard {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 26px;
+      color: #fff;
+      font-family: "Inter", sans-serif;
+   }
+   .childComponent {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+   .childComponentCard {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+   }
+}
+@media (max-width: 995px) {
+   .childComponentCard {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 26px;
+      color: #fff;
+      font-family: "Inter", sans-serif;
+   }
+   .childComponent {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+   }
+   .childComponentCard {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+   }
+}

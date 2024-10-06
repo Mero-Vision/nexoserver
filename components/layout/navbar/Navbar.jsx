@@ -159,11 +159,9 @@ const Navbar = () => {
    const pathname = usePathname();
 
    // Check if pathname matches specific paths
-   const isActive = [
-      "shared-hosting",
-      "server-dom",
-      "domain-name",
-   ].some((path) => pathname.includes(path));
+   const isActive = ["shared-hosting", "cloud-hosting"].some((path) =>
+      pathname.includes(path)
+   );
    return (
       <>
          <header
@@ -387,11 +385,9 @@ const NavLink = ({ item, navBackground }) => {
    const pathname = usePathname();
 
    // Check if pathname matches specific paths
-   const isActive = [
-      "shared-hosting",
-      "server-dom",
-      "domain-name",
-   ].some((path) => pathname.includes(path));
+   const isActive = ["shared-hosting", "cloud-hosting"].some((path) =>
+      pathname.includes(path)
+   );
 
    return (
       <li className="nav-item">

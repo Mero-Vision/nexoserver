@@ -25,7 +25,7 @@ const NavModalBox = ({
    };
 
    const open = Boolean(anchorEl);
-   const isActive = ["/shared-hosting"].some((path) =>
+   const isActive = ["shared-hosting", "cloud-hosting"].some((path) =>
       pathname.includes(path)
    );
 

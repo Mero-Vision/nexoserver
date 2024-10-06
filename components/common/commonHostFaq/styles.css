@@ -1,0 +1,145 @@
+.faqHomeWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+   position: relative;
+}
+
+.faqBgLeft {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 200px;
+   height: auto;
+}
+.faqBgRight {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 350px;
+   height: auto;
+}
+
+.faqHomeBox {
+   max-width: 950px;
+   width: 100%;
+}
+
+.faqHomeBoxHead {
+   font-size: 38px;
+   font-weight: 500;
+   line-height: 51px;
+   width: 100%;
+   color: #201f37;
+   margin-bottom: 48px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: margin-top 0.5s ease;
+}
+
+.faqHomeBoxHeadWidth {
+   text-align: center;
+   width: 698px;
+   font-size: 42px;
+   font-weight: 600;
+}
+
+/* accordian */
+
+.accordianBoxMainFaq {
+   height: 100%;
+}
+
+.accordianQuestion {
+   font-size: 18px;
+   color: #121127;
+   font-weight: 500;
+   padding: 12px;
+}
+.accordianAnswer {
+   font-size: 14px;
+   color: #787784;
+   font-weight: 400;
+}
+
+@media screen and (max-width: 1199px) {
+   .faqHomeWrap {
+      padding: 6rem 4rem;
+   }
+   /* .accordianBoxMainFaq {
+      height: 65dvh;
+   } */
+}
+@media screen and (max-width: 1100px) {
+   .faqHomeBoxHead {
+      font-size: 36px;
+   }
+   /* .accordianBoxMainFaq {
+      height: 60dvh;
+   } */
+   .faqHomeBoxHeadWidth {
+      text-align: center;
+      width: 698px;
+      font-size: 36px;
+      font-weight: 600;
+   }
+}
+@media screen and (max-width: 899px) {
+   .faqHomeWrap {
+      padding: 4rem 2rem;
+   }
+
+   .faqHomeBoxHead {
+      font-size: 34px;
+      line-height: 48px;
+   }
+   .faqHomeBoxHeadWidth {
+      width: 100%;
+   }
+   .faqBgLeft {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 150px;
+      height: auto;
+   }
+   .faqBgRight {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 260px;
+      height: auto;
+   }
+}
+@media screen and (max-width: 614px) {
+   .faqHomeBoxHead {
+      font-size: 32px;
+      line-height: 46px;
+   }
+   .faqHomeBoxHeadWidth {
+      width: 100%;
+   }
+   .faqBgLeft {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 120px;
+      height: auto;
+   }
+   .faqBgRight {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      height: auto;
+   }
+   .faqHomeBoxHeadWidth {
+      text-align: center;
+      width: 698px;
+      font-size: 32px;
+      font-weight: 600;
+   }
+}

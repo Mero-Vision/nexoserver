@@ -1,0 +1,124 @@
+.footerBannerCommonWrapContainer {
+   height: 100%;
+   background-color: #3384fe;
+   background-image: url("../../../public/assets/pages/hosting/hostBg.png");
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   margin: 6rem;
+   height: 230px;
+   border-radius: 8px;
+   max-width: 1300px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   /* justify-content: center; */
+}
+
+.footerBannerCommonWrap {
+   padding: 0px 70px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 230px;
+   width: 100%;
+}
+
+.footerBannerCommonTitleBox {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   width: 100%;
+}
+
+.footerBannerCommonBtn {
+   font-size: 15px;
+   font-weight: 600;
+   padding: 6px 10px;
+   background-color: #4f9bff;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   text-align: start;
+   color: #fff;
+   width: max-content;
+}
+.footerBannerCommonTitle {
+   font-size: 30px;
+   font-weight: 600;
+   font-weight: 38px;
+   margin-bottom: 20px;
+   text-align: start;
+   color: #fff;
+}
+
+.footerBannerCommonRightBtn {
+   background-color: #fdd602 !important;
+   color: #343434 !important;
+   padding: 6px 24px !important;
+   white-space: nowrap !important;
+   text-transform: capitalize !important;
+   font-size: 16px !important;
+   margin-top: 4px !important;
+   transition: 0.3s ease-in-out !important;
+}
+.footerBannerCommonRightBtn:hover {
+   background-color: #343434 !important;
+   color: #fff !important;
+   padding: 6px 24px !important;
+   white-space: nowrap !important;
+   text-transform: capitalize !important;
+   font-size: 16px !important;
+   margin-top: 0px !important;
+   transition: 0.3s ease-in-out !important;
+}
+
+@media (max-width: 1080px) {
+   .footerBannerCommonWrap {
+      padding: 6rem 4rem;
+   }
+}
+@media (max-width: 840px) {
+   .footerBannerCommonWrapContainer {
+      margin: 6rem 2rem;
+      height: 300px;
+   }
+   .footerBannerCommonWrap {
+      padding: 0px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 300px !important;
+      width: 100%;
+   }
+   .footerBannerCommonRightBtnBox {
+      display: flex;
+      justify-content: start;
+      width: 100%;
+   }
+   .footerBannerCommonBtn {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 10px;
+      background-color: #4f9bff;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      text-align: start;
+      color: #fff;
+      width: max-content;
+   }
+   .footerBannerCommonTitle {
+      font-size: 26px;
+      font-weight: 600;
+      font-weight: 38px;
+      margin-bottom: 20px;
+      text-align: start;
+      color: #fff;
+   }
+}
+@media (max-width: 760px) {
+   .footerBannerCommonWrap {
+      padding: 6rem 2rem;
+   }
+}

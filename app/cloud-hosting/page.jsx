@@ -6,27 +6,24 @@ import CommonHostBanner from "@/components/common/commonHostBanner/CommonHostBan
 import CommonHostFaq from "@/components/common/commonHostFaq/CommonHOstFaq";
 import CommonHostFeatures from "@/components/common/commonHostFeatures/CommonHostFeatures";
 import CommonHostPricing from "@/components/common/commonHostPricing/CommonHostPricing";
-import diamond from "@/public/assets/pages/hosting/diamond.png";
-import img from "@/public/assets/pages/hosting/hostBannerImg.svg";
-import wordpress from "@/public/assets/pages/hosting/wordpress.png";
+import CustomGlideButton from "@/components/common/CustomGlideButton/CustomGlideButton";
+import img from "@/public/assets/pages/hosting/bannerCloud.png";
 import { Box } from "@mui/material";
-import Image from "next/image";
-import styles from "./Shared.module.css";
-
+import styles from "./Cloud.module.css";
 const page = () => {
    return (
       <>
          <CommonHostBanner
-            title1={"Shared Website"}
-            title2={"Hosting"}
-            desc={"Everything you need to launch a website."}
-            button={"Starting at $2.59/mo"}
+            title1={"Cloud Computing"}
+            title2={"Object Storage"}
+            desc={"Launch cloud servers in 30 seconds or less."}
+            button={"Cloud Hosting"}
             img={img}
          >
             <ChildrenComponent />
          </CommonHostBanner>{" "}
-         <CommonHostPricing />
          <CommonHostChooseNexo />
+         <CommonHostPricing />
          <CommonHostFeatures />
          <CommonHostFaq />
          <CommonFooterBanner />
@@ -36,18 +33,18 @@ const page = () => {
 
 const ChildrenComponent = () => {
    return (
-      <Box className={styles.childComponent}>
-         <Box className={styles.childComponentCard}>
-            <Image src={diamond} alt={"img"} />
-            <Box className={styles.childComponentCard}>
-               Look like a Pri- Fast, <br /> Secure, & Always Up
-            </Box>
+      <Box className={styles.childComponentCloud}>
+         <Box className={styles.childComponentCardCloud}>
+            <CustomGlideButton title={"Buy VPS"} bgYellow />
          </Box>
-         <Box className={styles.childComponentCard}>
-            <Image src={wordpress} alt={"img"} />
-            <Box className={styles.childComponentCard}>
-               Look like a Pri- Fast, <br /> Secure, & Always Up
-            </Box>
+         <Box
+            sx={{
+               color: "#fff",
+               fontWeight: "400",
+               textDecoration: "underline",
+            }}
+         >
+            Starting @ $10.00/mo
          </Box>
       </Box>
    );
