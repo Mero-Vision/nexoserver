@@ -73,7 +73,7 @@ const CommonHostChooseNexo = () => {
             <div className="loadTitleBoxChoose">
                <motion.div
                   ref={ref}
-                  initial={{ y: 100, opacity: 0 }}
+                  initial={{ y: 50, opacity: 0 }}
                   animate={isInView ? { y: 0, opacity: 1 } : {}}
                   transition={{
                      duration: 0.6,
@@ -90,7 +90,7 @@ const CommonHostChooseNexo = () => {
                </motion.div>
                <motion.div
                   ref={ref}
-                  initial={{ y: 100, opacity: 0 }}
+                  initial={{ y: 50, opacity: 0 }}
                   animate={isInView ? { y: 0, opacity: 1 } : {}}
                   transition={{
                      duration: 0.8,
@@ -120,7 +120,7 @@ const CommonHostChooseNexo = () => {
                   >
                      <motion.div
                         ref={ref}
-                        initial={{ y: 150, opacity: 0 }}
+                        initial={{ y: -50, opacity: 0 }}
                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                         transition={{
                            duration: item?.duration,

@@ -1,0 +1,382 @@
+.clientCommonWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f4f9fe;
+}
+
+.clientCommonWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.cardClientCommonMain {
+   border-radius: 18px;
+
+   background-color: #d7e8fa;
+   background-image: url("../../../public/assets/pages/hosting/hostBgVertical.png"); /* Replace with your image URL */
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.cardClientCommonMainTop {
+   /* background-color: #2f82d9; */
+   padding: 50px;
+   height: 100%;
+}
+
+.clientCommonTitle {
+   font-size: 28px;
+   font-weight: 600;
+   color: #fff;
+   margin-bottom: 8px;
+}
+.clientCommonSubtitle {
+   font-size: 14px;
+   font-weight: 400;
+   color: #fff;
+   margin-bottom: 14px;
+}
+
+.clientTitleBox {
+   margin-bottom: 50px;
+}
+
+.clientTitle {
+   font-size: 48px;
+   color: #363636;
+   line-height: 52px;
+   font-weight: 700;
+   margin-bottom: 14px;
+   letter-spacing: 3px;
+   text-align: center;
+}
+.clientSubtitle {
+   font-size: 16px;
+   color: #464545;
+   line-height: 34px;
+   font-weight: 400;
+   letter-spacing: 2px;
+   text-align: center;
+}
+
+.slideBox {
+   /* transition: 0.8s ease-in-out; */
+}
+
+/* Arrows */
+.arrowsContainer {
+   display: none;
+   gap: 12px;
+}
+
+.cardImgRow {
+   display: flex;
+   gap: 18px;
+   margin-top: 10px;
+}
+
+.cardImgBox {
+   width: 50px;
+   height: 50px;
+}
+.cardImg {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50px;
+}
+
+.cardNameBox {
+   display: flex;
+   flex-direction: column;
+}
+
+.cardName {
+   color: #454450;
+   font-size: 16px;
+   font-weight: 600;
+}
+.cardNameLast {
+   color: #838286;
+   font-size: 15px;
+   font-weight: 600;
+   height: 40px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+.cardUniversity {
+   color: #6c6b80;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+/* Slider */
+.sliderContainer {
+   margin-top: 20px;
+   overflow: hidden; /* Ensure content inside the slider does not overflow */
+}
+
+@media (min-width: 1024px) {
+   .sliderContainer {
+      margin-top: 64px;
+   }
+}
+
+/* Client Card */
+.cardContainer {
+   display: flex;
+   flex-direction: column;
+   background-color: #deecfa;
+   background-image: url("../../../public/assets/pages/hosting/hostBgVertical.png"); /* Replace with your image URL */
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   border-radius: 18px;
+   padding: 45px;
+   margin: 0px 12px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+.cardContainer:hover {
+   display: flex;
+   flex-direction: column;
+   background-color: #0763e6;
+   background-image: url("../../../public/assets/pages/hosting/hostBgVertical.png"); /* Replace with your image URL */
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   border-radius: 18px;
+   padding: 45px;
+   margin: 0px 12px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+
+.cardContainer:hover .cardContainerIcon,
+.cardContainer:hover .cardDesc,
+.cardContainer:hover .cardName,
+.cardContainer:hover .cardCountry {
+   transition: 0.2s ease-in-out;
+   color: #fff !important; /* Change title and subtitle color on hover */
+}
+
+.cardContainerActive {
+   display: flex;
+   flex-direction: column;
+   background-color: #0763e6;
+   background-image: url("../../../public/assets/pages/hosting/hostBgVertical.png"); /* Replace with your image URL */
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   border-radius: 18px;
+   padding: 45px;
+   margin: 0px 12px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+
+.cardContainerIcon {
+   color: #4d4c5d !important;
+   transform: rotate(180deg);
+   font-size: 60px !important;
+   margin-left: -12px;
+   transition: 0.2s ease-in-out;
+}
+
+.cardContainerIconActive {
+   color: #ffffff !important;
+   transform: rotate(180deg);
+   font-size: 60px !important;
+   margin-left: -12px;
+   transition: 0.2s ease-in-out;
+}
+
+.cardDesc {
+   color: #383751;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   margin-bottom: 12px;
+   height: 95px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   line-clamp: 4;
+   -webkit-box-orient: vertical;
+   transition: 0.2s ease-in-out;
+}
+.cardDescActive {
+   color: #ffffff;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   margin-bottom: 12px;
+   height: 95px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+   line-clamp: 4;
+   -webkit-box-orient: vertical;
+   transition: 0.2s ease-in-out;
+}
+.cardName {
+   color: #424251;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 24px;
+   margin-bottom: 2px;
+   transition: 0.2s ease-in-out;
+}
+.cardNameActive {
+   color: #ffffff;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 24px;
+   margin-bottom: 2px;
+   transition: 0.2s ease-in-out;
+}
+.cardCountry {
+   color: #424251;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   transition: 0.2s ease-in-out;
+}
+.cardCountryActive {
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   transition: 0.2s ease-in-out;
+}
+
+/* card */
+
+@media screen and (max-width: 1199px) {
+   .clientsHomeWrap {
+      padding: 4rem;
+   }
+
+   .cardContainer {
+      padding: 45px 42px;
+      margin: 0px 10px;
+   }
+
+   .cardDesc {
+      color: #383751;
+      font-size: 15px;
+
+      height: 95px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      line-clamp: 4;
+      -webkit-box-orient: vertical;
+   }
+   .cardName {
+      font-size: 15px;
+   }
+   .cardCountry {
+      font-size: 15px;
+   }
+
+   .clientsTitle {
+      font-size: 34px;
+      width: 470px;
+   }
+   .towerImg {
+      width: 90%;
+   }
+}
+@media screen and (max-width: 899px) {
+   .clientsHomeWrap {
+      padding: 4rem 2rem;
+   }
+
+   .cardContainer {
+      padding: 40px 32px;
+      margin: 0px 8px;
+   }
+
+   .cardDesc {
+      color: #383751;
+      font-size: 13px;
+
+      height: 95px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      line-clamp: 4;
+      -webkit-box-orient: vertical;
+   }
+   .cardName {
+      font-size: 13px;
+   }
+   .cardCountry {
+      font-size: 13px;
+   }
+   .clientsTitle {
+      font-size: 30px;
+      width: 100%;
+      line-height: 40px;
+   }
+   .towerImg {
+      width: 90%;
+   }
+}
+
+@media screen and (max-width: 1080px) {
+   .clientCommonWrap {
+      padding: 6rem 4rem;
+   }
+   .clientTitle {
+      font-size: 40px;
+      color: #363636;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .clientSubtitle {
+      font-size: 15px;
+      color: #464545;
+      line-height: 34px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+}
+@media screen and (max-width: 760px) {
+   .clientCommonWrap {
+      padding: 6rem 2rem;
+   }
+   .clientTitle {
+      font-size: 36px;
+      color: #363636;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+   .clientSubtitle {
+      font-size: 14px;
+      color: #464545;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+   }
+}

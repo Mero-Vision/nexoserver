@@ -1,29 +1,30 @@
 "use client";
 
-import CommonHostChooseNexo from "@/components/common/commonChooseNexo/CommonChooseNexo";
 import CommonClient from "@/components/common/commonClient/CommonClient";
 import CommonFooterBanner from "@/components/common/commonFooterBanner/CommonFooterBanner";
 import CommonHostBanner from "@/components/common/commonHostBanner/CommonHostBanner";
-import CommonHostFaq from "@/components/common/commonHostFaq/CommonHostFaq";
-import CommonHostFeatures from "@/components/common/commonHostFeatures/CommonHostFeatures";
-import CommonHostPricing from "@/components/common/commonHostPricing/CommonHostPricing";
+import CommonInfoAboutBanner from "@/components/common/commonInfoAboutBanner/CommonInfoAboutBanner";
+import CommonMap from "@/components/common/commonMap/CommonMap";
+import CommonTeam from "@/components/common/commonTeam/CommonTeam";
 import CustomGlideButton from "@/components/common/CustomGlideButton/CustomGlideButton";
-import img from "@/public/assets/pages/hosting/bannerCloud.png";
+import img from "@/public/assets/pages/hosting/bannerAbout.png";
 import { Box } from "@mui/material";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import styles from "./Cloud.module.css";
+import styles from "./About.module.css";
 
-const CloudHostPage = () => {
+const AboutPage = () => {
    const ref = useRef(null);
    const isInView = useInView(ref, { once: true });
    return (
       <>
          <CommonHostBanner
-            title1={"Cloud Computing"}
-            title2={"Object Storage"}
-            desc={"Launch cloud servers in 30 seconds or less."}
-            button={"Cloud Hosting"}
+            title1={"A Unique Team Behind"}
+            title2={"Your Online Success"}
+            desc={
+               "What makes Site Ground unique is our extraordinary team of individuals who put their passion."
+            }
+            button={"About Nexo"}
             img={img}
          >
             <motion.div
@@ -43,11 +44,10 @@ const CloudHostPage = () => {
                <ChildrenComponent />
             </motion.div>
          </CommonHostBanner>{" "}
-         <CommonHostChooseNexo />
-         <CommonHostPricing />
-         <CommonHostFeatures />
+         <CommonMap />
+         <CommonInfoAboutBanner />
+         <CommonTeam />
          <CommonClient />
-         <CommonHostFaq />
          <CommonFooterBanner />
       </>
    );
@@ -57,7 +57,7 @@ const ChildrenComponent = () => {
    return (
       <Box className={styles.childComponentCloud}>
          <Box className={styles.childComponentCardCloud}>
-            <CustomGlideButton title={"Buy VPS"} bgYellow />
+            <CustomGlideButton title={"View Plan"} bgYellow />
          </Box>
          <Box
             sx={{
@@ -72,4 +72,4 @@ const ChildrenComponent = () => {
    );
 };
 
-export default CloudHostPage;
+export default AboutPage;

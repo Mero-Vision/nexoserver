@@ -1,5 +1,5 @@
-import { Box, Button } from "@mui/material";
-import { useInView } from "framer-motion";
+import { Button } from "@mui/material";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import "./styles.css";
 const CommonFooterBanner = () => {
@@ -17,18 +17,60 @@ const CommonFooterBanner = () => {
          <div className="footerBannerCommonWrapContainer">
             <div className="footerBannerCommonWrap">
                <div className="footerBannerCommonTitleBox">
-                  <div className="footerBannerCommonBtn">
+                  <motion.div
+                     ref={ref}
+                     initial={{ y: -20, opacity: 0 }}
+                     animate={isInView ? { y: 0, opacity: 1 } : {}}
+                     transition={{
+                        duration: 0.6,
+                        bounce: 0.5,
+                        damping: 40,
+                        x: {
+                           type: "spring",
+                           stiffness: 300,
+                        },
+                     }}
+                     className="footerBannerCommonBtn"
+                  >
                      Need help choosing a plan?{" "}
-                  </div>
-                  <div className="footerBannerCommonTitle">
+                  </motion.div>
+                  <motion.div
+                     ref={ref}
+                     initial={{ y: -30, opacity: 0 }}
+                     animate={isInView ? { y: 0, opacity: 1 } : {}}
+                     transition={{
+                        duration: 0.6,
+                        bounce: 0.5,
+                        damping: 40,
+                        x: {
+                           type: "spring",
+                           stiffness: 300,
+                        },
+                     }}
+                     className="footerBannerCommonTitle"
+                  >
                      Need help? We are <br /> always here for you.
-                  </div>
+                  </motion.div>
                </div>
-               <Box className="footerBannerCommonRightBtnBox">
+               <motion.div
+                  ref={ref}
+                  initial={{ y: -30, opacity: 0 }}
+                  animate={isInView ? { y: 0, opacity: 1 } : {}}
+                  transition={{
+                     duration: 0.6,
+                     bounce: 0.5,
+                     damping: 40,
+                     x: {
+                        type: "spring",
+                        stiffness: 300,
+                     },
+                  }}
+                  className="footerBannerCommonRightBtnBox"
+               >
                   <Button className="footerBannerCommonRightBtn">
                      Chat with us
                   </Button>
-               </Box>
+               </motion.div>
             </div>
          </div>
       </div>

@@ -1,0 +1,97 @@
+.commonMapWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+}
+
+.commonMapWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.commonMapTitleBox {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 60px;
+   justify-content: center;
+   align-items: center;
+}
+.commonMapTitle {
+   font-size: 42px;
+   color: #16212a;
+   line-height: 52px;
+   font-weight: 700;
+   margin-bottom: 14px;
+   letter-spacing: 2px;
+   text-align: center;
+}
+.commonMapSubtitle {
+   font-size: 15px;
+   color: #16212a;
+   line-height: 28px;
+   font-weight: 400;
+   letter-spacing: 2px;
+   text-align: center;
+   width: 70%;
+}
+
+.svgBoxCommonMap {
+   width: 100%;
+   height: auto;
+   margin-bottom: 20px;
+}
+
+.svgBoxCommonMapImg {
+   width: 100%;
+   height: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+   .commonMapWrap {
+      padding: 6rem 4rem;
+   }
+   .commonMapTitle {
+      font-size: 38px;
+      color: #16212a;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+   }
+   .commonMapSubtitle {
+      font-size: 14px;
+      color: #16212a;
+      line-height: 28px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 760px) {
+   .commonMapTitle {
+      font-size: 32px;
+      color: #16212a;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+   }
+   .commonMapSubtitle {
+      font-size: 14px;
+      color: #16212a;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-align: center;
+      width: 100%;
+   }
+
+   .commonMapWrap {
+      padding: 6rem 2rem;
+   }
+}

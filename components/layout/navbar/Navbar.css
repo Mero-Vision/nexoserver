@@ -28,7 +28,7 @@ header .navbar {
    display: flex;
    z-index: 100;
    padding: 1.5rem 6rem !important;
-   background-color: transparent;
+   background-color: #fff;
    transition: 0.4s ease-in-out;
    justify-content: space-between;
 }

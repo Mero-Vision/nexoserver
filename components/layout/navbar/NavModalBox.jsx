@@ -30,17 +30,17 @@ const NavModalBox = ({
    );
 
    console.log("dasdasdsdfsdfsdds", { isActive, navBackground });
-   const getColor = () => {
-      if (!isActive && !navBackground) {
-         return "#000"; // white for logo
-      } else if (isActive && !navBackground) {
-         return "#fff"; // black for logoFooter
-      } else if (navBackground) {
-         return "#000"; // white for logo
-      } else {
-         return "#fff"; // black for logoFooter
-      }
-   };
+   // const getColor = () => {
+   //    if (!isActive && !navBackground) {
+   //       return "#000"; // white for logo
+   //    } else if (isActive && !navBackground) {
+   //       return "#fff"; // black for logoFooter
+   //    } else if (navBackground) {
+   //       return "#000"; // white for logo
+   //    } else {
+   //       return "#fff"; // black for logoFooter
+   //    }
+   // };
 
    return (
       <Box
@@ -53,7 +53,7 @@ const NavModalBox = ({
                display: "flex",
                alignItems: "center",
                gap: "5px",
-               color: getColor(),
+               color: "#020c1c",
             }}
          >
             {props}{" "}

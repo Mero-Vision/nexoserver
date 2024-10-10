@@ -1,0 +1,115 @@
+.commonTeamWrap {
+   padding: 6rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff;
+}
+
+.commonTeamWrapBox {
+   max-width: 1300px;
+   width: 100%;
+}
+
+.commonTeamTitleBox {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 60px;
+   justify-content: center;
+   align-items: center;
+}
+.commonTeamTitle {
+   font-size: 42px;
+   color: #16212a;
+   line-height: 52px;
+   font-weight: 700;
+   margin-bottom: 14px;
+   letter-spacing: 2px;
+   text-align: center;
+}
+.commonTeamSubtitle {
+   font-size: 15px;
+   color: #16212a;
+   line-height: 28px;
+   font-weight: 400;
+   letter-spacing: 2px;
+   text-align: center;
+   width: 70%;
+}
+
+.commonTeamCardMain {
+   display: flex;
+   flex-direction: column;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.commonTeamCardImg {
+   width: 100%;
+   height: 380px;
+   object-fit: cover;
+}
+
+.commonTeamCardName {
+   font-size: 24px;
+   color: #3a434a;
+   font-weight: 600;
+   margin-bottom: 14px;
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 8px;
+}
+.commonTeamCardPosition {
+   font-size: 16px;
+   color: #16212a;
+   font-weight: 400;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+   .commonTeamWrap {
+      padding: 6rem 4rem;
+   }
+   .commonTeamTitle {
+      font-size: 38px;
+      color: #16212a;
+      line-height: 52px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+   }
+   .commonTeamSubtitle {
+      font-size: 14px;
+      color: #16212a;
+      line-height: 28px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-align: center;
+   }
+}
+
+@media screen and (max-width: 760px) {
+   .commonTeamTitle {
+      font-size: 32px;
+      color: #16212a;
+      line-height: 42px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+   }
+   .commonTeamSubtitle {
+      font-size: 14px;
+      color: #16212a;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-align: center;
+      width: 100%;
+   }
+
+   .commonTeamWrap {
+      padding: 6rem 2rem;
+   }
+}

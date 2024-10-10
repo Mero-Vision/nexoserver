@@ -1,6 +1,7 @@
 "use client";
 
 import CommonHostChooseNexo from "@/components/common/commonChooseNexo/CommonChooseNexo";
+import CommonClient from "@/components/common/commonClient/CommonClient";
 import CommonFooterBanner from "@/components/common/commonFooterBanner/CommonFooterBanner";
 import CommonHostBanner from "@/components/common/commonHostBanner/CommonHostBanner";
 import CommonHostFaq from "@/components/common/commonHostFaq/CommonHostFaq";
@@ -10,10 +11,14 @@ import diamond from "@/public/assets/pages/hosting/diamond.png";
 import img from "@/public/assets/pages/hosting/hostBannerImg.svg";
 import wordpress from "@/public/assets/pages/hosting/wordpress.png";
 import { Box } from "@mui/material";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { useRef } from "react";
 import styles from "./Shared.module.css";
 
-const page = () => {
+const SharedHostingPage = () => {
+   const ref = useRef(null);
+   const isInView = useInView(ref, { once: true });
    return (
       <>
          <CommonHostBanner
@@ -23,11 +28,27 @@ const page = () => {
             button={"Starting at $2.59/mo"}
             img={img}
          >
-            <ChildrenComponent />
+            <motion.div
+               ref={ref}
+               initial={{ y: -20, opacity: 0 }}
+               animate={isInView ? { y: 0, opacity: 1 } : {}}
+               transition={{
+                  duration: 0.7,
+                  bounce: 0.5,
+                  damping: 40,
+                  x: {
+                     type: "spring",
+                     stiffness: 300,
+                  },
+               }}
+            >
+               <ChildrenComponent />
+            </motion.div>
          </CommonHostBanner>{" "}
          <CommonHostPricing />
          <CommonHostChooseNexo />
          <CommonHostFeatures />
+         <CommonClient />
          <CommonHostFaq />
          <CommonFooterBanner />
       </>
@@ -53,4 +74,4 @@ const ChildrenComponent = () => {
    );
 };
 
-export default page;
+export default SharedHostingPage;

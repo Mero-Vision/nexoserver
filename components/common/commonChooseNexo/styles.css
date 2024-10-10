@@ -14,7 +14,7 @@
 .chooseCommonCardMain {
    border-radius: 8px;
    background: linear-gradient(0deg, #f4f9ff, #f4f9ff);
-   transition: 0.2s ease-in-out;
+   /* transition: 0.2s ease-in-out; */
 
    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }

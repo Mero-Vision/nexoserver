@@ -1,7 +1,6 @@
 "use client";
 import CommonScreenWidthChecker from "@/components/common/commomScreenWidthChecker/CommonScreen'WidthChecker";
 import logo from "@/public/assets/logo.png";
-import logoFooter from "@/public/assets/logoFooter.png";
 import cloudImg from "@/public/assets/navHosting/cloud.svg";
 import dedicatedImg from "@/public/assets/navHosting/dedicated.svg";
 import resellerImg from "@/public/assets/navHosting/reseller.svg";
@@ -185,13 +184,15 @@ const Navbar = () => {
                         <Image
                            className="logoNav"
                            src={
-                              !isActive && !navBackground
-                                 ? logo
-                                 : isActive && !navBackground
-                                 ? logoFooter
-                                 : navBackground
-                                 ? logo
-                                 : logoFooter
+                              // !isActive && !navBackground
+                              //    ? logo
+                              //    : isActive && !navBackground
+                              //    ? logoFooter
+                              //    : navBackground
+                              //    ?
+                              logo
+                              // :
+                              // logoFooter
                            }
                            alt="img"
                            // width={150}
@@ -306,7 +307,7 @@ const Navbar = () => {
                                  <Box className="logoNavMob">
                                     <Image
                                        className="logoNavImg"
-                                       src={logoFooter}
+                                       src={logo}
                                        alt="img"
                                        // width={40}
                                        // height={40}
@@ -394,11 +395,12 @@ const NavLink = ({ item, navBackground }) => {
          <Link href={item.url} passHref className="navbarLink">
             <div
                className={
-                  isActive && !navBackground
-                     ? "activeLink"
-                     : navBackground
-                     ? "nav-link"
-                     : "nav-link-background"
+                  // isActive && !navBackground
+                  //    ? "activeLink"
+                  //    : navBackground
+                  //    ?
+                  "nav-link"
+                  // : "nav-link-background"
                }
             >
                {item.name}
